@@ -1,0 +1,10 @@
+UIMClient HTML5 SDK
+
+如何构建
+
+全局安装 gulp
+npm install -g gulp
+
+默认构建
+
+npm run build

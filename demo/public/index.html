@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>UIMClient</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/base.css">
+    </head>
+    <body>
+        <header>
+            <div class="h_content">
+                <span>UIMClient测试</span>
+            </div>
+        </header>
+
+        <script src="/javascripts/uimclient.js" type="text/javascript"></script>
+        <script>
+            var token = 'djiewojifjoe'
+            uimclient.doAuth(token, function(result) {
+                console.log('登陆成功')
+            
+                var msg = {
+                    to: 34124322,
+                    type: 1,
+                    content: '你好'
+                }
+                uimclient.send(msg)
+            })
+
+        </script>
+    </body>
+</html>
